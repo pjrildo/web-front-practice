@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Notes JS</title>
+    <meta charset="UTF-8">
+    <script src="script/variaveis.js"></script>
+    <script src="script/operadores.js"></script>
+    <script src="script/funcoes.js"></script>
+    <script src="script/calculadora.js"></script>
+    <script src="script/utilitario.js"></script>
+</head>
+<body>
+    <p id="pAulajs"></p>
+    <script>
+        document.getElementById("pAulajs").innerHTML = nome;
+    </script>
+    <br>
+    <p id="pNome"></p>
+    <script>
+        nomePessoa = exibirNome("Rildo Alves");
+        document.getElementById("pNome").innerHTML = "Nome recebido: " + nomePessoa;
+
+        console.log("Calculadora simples: ");
+        console.log("Soma: " + somar(5, 5));
+        console.log("Subtração: " + subtrair(10, 5));
+        console.log("Multiplicação: " + multiplicar(2, 5));
+        console.log("Divisão: " + dividir(10, 2));
+
+        console.log("Numeros pares por intervalo: ");
+        numeros_pares(1, 10);
+        verifica_maioridade(21);
+        verifica_ano_atual(2020);
+        console.log(verifica_marca("Mi"));
+    </script>
+
+    <a href="index.html">Voltar</a>
+</body>
+</html>
